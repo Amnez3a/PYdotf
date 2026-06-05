@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["py_dotf", "py_dotf_logic", "py_dotf_parseArgs"]
+
+[project]
+name = "pydotf"
+version = "0.1.0"
+description = "Manager DOT files on python."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["tomli-w=1.0.0",]
+
+[project.scripts]
+dotf = "py_dotf:main"

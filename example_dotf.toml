@@ -1,0 +1,13 @@
+# Пример конфигурационного файла для dotf / Example configuration file for dotf
+
+# Настройки для dotf / Settings for dotf
+[settings]
+method = "symlink"
+backup = true # будет ли создаваться бекап старых файлов, если они уже существуют / whether to create a backup of old files if they already exist
+backup_dir = "~/.dotf_backup"
+dir = "~/dotfiles" # директория, в которой хранятся ваши дот файлы / directory where your dotfiles are stored
+
+# 1. путь к дот файлу / path to the dotfile / path to the dotfile
+# 2. путь к файлу, который нужно создать / path to the file that needs to be created
+[mappings]
+".zshrc" = "~/.zshrc"
